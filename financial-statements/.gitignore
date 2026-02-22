@@ -1,0 +1,18 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Database
+*.db
+*.db-journal
+
+# PDFs and sensitive files
+*.pdf
+*.csv
+
+# System files
+.DS_Store
+*.log
+
+# Output files
+processed/

@@ -1,0 +1,22 @@
+{
+  "name": "financial-statements-parser",
+  "version": "1.0.0",
+  "description": "Parse financial statements and update dashboard data",
+  "main": "parse.js",
+  "scripts": {
+    "parse": "node parse.js",
+    "manual": "node manual-entry.js",
+    "init-db": "node init-database.js",
+    "parse-transactions": "node parse-transactions.js",
+    "populate": "node populate-transactions.js",
+    "rebuild-ledger": "npm run populate && python3 build_complete_ledger.py",
+    "server": "node start-server.js"
+  },
+  "dependencies": {
+    "csv-parser": "^3.2.0",
+    "pdf-parse": "^1.1.4",
+    "sqlite3": "^5.1.7",
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
+  }
+}
