@@ -910,13 +910,12 @@ export default function App() {
                 <Card>
                   <h3 className="font-semibold text-sm mb-2">Top Recurring Expenses</h3>
                   {[
-                    {m:"Bilt (Rent)",a:"~$3,860/mo",c:"#EF4444",note:"Largest fixed cost"},
-                    {m:"Morton Williams / Acme / Prime Food",a:"~$350/mo",c:"#F97316",note:"Groceries"},
-                    {m:"T-Mobile",a:"~$65-103/mo",c:"#06B6D4",note:"Varies — check plan"},
-                    {m:"PSEG Electric",a:"~$69-156/mo",c:"#10B981",note:"Seasonal variance"},
-                    {m:"Verizon",a:"$35/mo",c:"#06B6D4",note:"Internet"},
-                    {m:"PATH/MTA",a:"~$100/mo",c:"#3B82F6",note:"$3/ride average"},
-                    {m:"Barber (Kwik/Stylebegin)",a:"~$42/mo",c:"#A78BFA",note:"Bi-weekly"},
+                    {m:"Bilt Payment (Rent)",a:"~$3,863/mo",c:"#EF4444",note:"Fixed cost (skipped Nov)"},
+                    {m:"Morton Williams / Prime Food",a:"~$233/mo",c:"#F97316",note:"Groceries"},
+                    {m:"PATH/MTA/Uber",a:"~$116/mo",c:"#3B82F6",note:"Varies with travel"},
+                    {m:"PSEG Electric",a:"~$76-155/mo",c:"#10B981",note:"Seasonal variance"},
+                    {m:"Verizon",a:"$34/mo",c:"#06B6D4",note:"Phone"},
+                    {m:"Barber (Kwik)",a:"~$41/mo",c:"#A78BFA",note:"Monthly"},
                   ].map((r,i)=>(
                     <div key={i} className="flex justify-between items-center bg-gray-700 rounded-lg px-3 py-2 mb-1 text-xs">
                       <div><span className="font-medium">{r.m}</span><br/><span className="text-gray-500">{r.note}</span></div>
